@@ -1,13 +1,22 @@
 public class LabRunner {
     public static void main(String[] args) {
-        String str1 = "Friday";
-        String str2 = new String("October");
-        String s = "7th!";
-        String str3 = new String(s);
+        BabyParrot baby = new BabyParrot("Toucan", 3, 4.25);
+        baby.setName("Lil' Beans");
+        String info = baby.parrotInfo(); // store returned string in variable
+        System.out.println(info);        // print the returned string
 
-        System.out.println(str1);
-        System.out.println(str2);
-        System.out.println(str3);
-        // Hi
+        Student student = new Student("Abby", "Smith", 2023);
+        student.addTestScore(95);
+        student.addTestScore(98);
+        System.out.println(student.getStudentInfo());
+
+
+
+
+
+
+
+
+
     }
 }
